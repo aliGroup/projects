@@ -2,6 +2,10 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <router-link :to="{path:'/home_user'}">cc</router-link>
+    <router-link :to="{path:'/'}">dd</router-link>
+    <div id="left" style="width: 220px;height: auto"><router-view name="top"></router-view></div>
+    <div id="right" style="width: 100%;height: auto;"><router-view name="middle"></router-view></div>
   </div>
 </template>
 
