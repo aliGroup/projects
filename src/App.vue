@@ -4,22 +4,44 @@
     <!--<router-view></router-view>-->
     <div id="Container">
       <div id="bgContainer">
-        <img src="assets/3.ico" alt="查看功能"/>
-        <img src="assets/1.ico" alt="收藏"/>
-        <img src="assets/4.ico" alt="搜索"/>
+        <img :src="dcc" alt="查看功能"/>
+        <img :src="dce" alt="收藏" @click="test()"/>
+        <img :src="dcb" alt="搜索"/>
       </div>
       <div></div>
-      <div></div>`
+      <div></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
+  import cc from "./assets/3.ico"
+  import dd from "./assets/4.ico"
+  import aa from "./assets/1.ico"
+  import ee from "./assets/5.ico"
+  export default {
   name: 'App',
+    data() {
+      return {
+        dcc: cc,
+        dcb:dd,
+        dca:aa,
+        dce:ee
+      }
+    },
+    methods: {
+      test: function () {
+        let count=this.dce;
+        if(this.dce === count)
+        {
+          this.dce=this.dca;
+        }
+        this.dca=count;
+      }
+    }
 }
 </script>
-
+<!--vue只需要操作数据从而改变dom，不要太过频繁的操作dom-->
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -46,7 +68,13 @@ export default {
     background-size:cover ;
   }
   #bgContainer>img{
-    width:100%;
-    height:100%;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    display: inline-block;
+    padding-right: 3px;
+    right: -123px;
+    top: 5px;
+    cursor:pointer;
   }
 </style>
