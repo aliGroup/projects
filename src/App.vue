@@ -8,8 +8,16 @@
         <img :src="dce" alt="收藏" @click="test()"/>
         <img :src="dcb" alt="搜索"/>
       </div>
-      <div></div>
-      <div></div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+      <span id="Sname">店名</span>
+      <marquee id="Notice">this is Notice</marquee>
+      <span></span>
+      <img src="" alt=""/>
     </div>
   </div>
 </template>
@@ -23,8 +31,8 @@
   name: 'App',
     data() {
       return {
-        dcc: cc,
-        dcb:dd,
+        dcc: dd,
+        dcb:cc,
         dca:aa,
         dce:ee
       }
@@ -76,5 +84,22 @@
     right: -123px;
     top: 5px;
     cursor:pointer;
+  }
+  #Sname{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 160px;
+    top: 31px;
+    font-size:13px;
+  }
+  #Notice{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 160px;
+    top: 52px;
+    font-size: 11px;
+    width: 160px;
   }
 </style>
