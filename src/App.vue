@@ -16,7 +16,7 @@
       </div>
       <span id="Sname">店名</span>
       <marquee id="Notice">this is Notice</marquee>
-      <span></span>
+      <div class="dhb"></div>
       <img src="" alt=""/>
     </div>
   </div>
@@ -102,4 +102,43 @@
     font-size: 11px;
     width: 160px;
   }
+.dhb {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+}
+.dhb:before,
+.dhb:after {
+  position: absolute;
+  content: "";
+  display: block;
+  border: 1px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.dhb:before {
+  width: 50px;
+  height: 50px;
+  bottom: -25px;
+  right: 25px;
+}
+.dhb:after {
+  width: 20px;
+  height: 20px;
+  bottom: -50px;
+  right: 0;
+}
 </style>
