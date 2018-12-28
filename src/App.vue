@@ -103,15 +103,15 @@
     width: 160px;
   }
 .dhb {
-  position: relative;
-  width: 500px;
-  height: 300px;
-  border: 1px solid black;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  position: relative;
+  width: 32px;
+  height: 13px;
+  border: 1px solid black;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -130,15 +130,15 @@
   border-radius: 50%;
 }
 .dhb:before {
-  width: 50px;
-  height: 50px;
-  bottom: -25px;
-  right: 25px;
+  width: 5px;
+  height: 2px;
+  bottom: -6px;
+  right: 3px;
 }
 .dhb:after {
-  width: 20px;
-  height: 20px;
-  bottom: -50px;
-  right: 0;
+  width: 6px;
+  height: 2px;
+  bottom: -11px;
+  right: -1px;
 }
 </style>
